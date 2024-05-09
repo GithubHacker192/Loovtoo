@@ -1,5 +1,5 @@
 // Location
-let lantitude, longitude;
+let latitude, longitude;
 if ('geolocation' in navigator) {
   navigator.geolocation.getCurrentPosition((position) => {
     const latitude = position.coords.latitude;
