@@ -1,16 +1,16 @@
-// Location
-let latitude, longitude;
-if ('geolocation' in navigator) {
-  navigator.geolocation.getCurrentPosition((position) => {
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
-    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  });
-} else {
-  console.log('Geolocation is not supported by this browser.');
-}
 // Maps API
 function myMap() {
+  // Location
+  let latitude, longitude;
+  if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      latitude = position.coords.latitude;
+      longitude = position.coords.longitude;
+      console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    });
+  } else {
+    console.log('Geolocation is not supported by this browser.');
+  }
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
     zoom:5,
