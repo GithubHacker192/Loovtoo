@@ -1,5 +1,5 @@
 import { latitude, longitude } from "./location.js";
-function myMap() {
+export function myMap() {
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
     zoom:5,
