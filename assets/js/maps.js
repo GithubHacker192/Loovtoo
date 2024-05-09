@@ -1,5 +1,5 @@
 import { latitude, longitude } from "./location.js";
-export function myMap() {
+function myMap() {
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
     zoom:5,
@@ -20,7 +20,6 @@ export function myMap() {
     }
   });
 }
-
 function createMarker(place) {
   if (!place.geometry || !place.geometry.location) return;
 
@@ -35,3 +34,4 @@ function createMarker(place) {
   });
 
 }
+window.myMap = myMap;
