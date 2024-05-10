@@ -24,14 +24,14 @@ function myMap() {
   service.findPlaceFromQuery(request, (results, status) => {
     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
       for (let i = 0; i < results.length; i++) {
-        createMarker(results[i]);
+        createMarker(results[i], map);
       }
 
       map.setCenter(results[0].geometry.location);
     }
   });
 }
-function createMarker(place) {
+function createMarker(place, map) {
   if (!place.geometry || !place.geometry.location) return;
 
   const marker = new google.maps.Marker({
