@@ -14,6 +14,7 @@ function myMap() {
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
     zoom:5,
+    mapId: "ec7bffaa310812cf",
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   const request = {
