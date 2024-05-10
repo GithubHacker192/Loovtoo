@@ -2,10 +2,12 @@
 function myMap() {
   // Location
   let latitude, longitude;
+  const loc = document.getElementById("position");
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
       latitude = position.coords.latitude;
       longitude = position.coords.longitude;
+      loc.classList.remove("hidden")
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
   } else {
@@ -35,7 +37,7 @@ function myMap() {
 function createMarker(place, map) {
   if (!place.geometry || !place.geometry.location) return;
 
-  const marker = new google.maps.Marker({
+  const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
     position: place.geometry.location,
   });
