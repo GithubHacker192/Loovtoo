@@ -2,10 +2,12 @@
 function myMap() {
   // Location
   let latitude, longitude;
+  const loc = document.getElementById("position");
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
       latitude = position.coords.latitude;
       longitude = position.coords.longitude;
+      loc.classList.remove("hidden")
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
   } else {
