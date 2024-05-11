@@ -3,11 +3,16 @@ function myMap() {
   // Location
   let latitude, longitude;
   const loc = document.getElementById("location");
+  const latitude_element = document.getElementById("latitude");
+  const longitude_element = document.getElementById("longitude");
+  
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
       latitude = position.coords.latitude;
       longitude = position.coords.longitude;
       loc.classList.remove("hidden")
+      latitude_element.innerHTML = latitude;
+      longitude_element.innerHTML = longitude;
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
   } else {
