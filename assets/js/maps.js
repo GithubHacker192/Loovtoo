@@ -2,7 +2,7 @@
 function myMap() {
   // Location
   let latitude, longitude;
-  const loc = document.getElementById("position");
+  const loc = document.getElementById("location");
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
       latitude = position.coords.latitude;
