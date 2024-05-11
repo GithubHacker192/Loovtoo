@@ -1,7 +1,6 @@
 // Maps API
 function myMap() {
   // Location
-  let latitude, longitude;
   const loc = document.getElementById("location");
   const latitude_element = document.getElementById("latitude");
   const longitude_element = document.getElementById("longitude");
@@ -18,6 +17,8 @@ function myMap() {
   } else {
     console.log('Geolocation is not supported by this browser.');
   }
+  const latitude = latitude_element.innerHTML;
+  const longitude = longitude_element.innerHTML;
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
     zoom:5,
