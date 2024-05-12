@@ -21,7 +21,7 @@ function myMap() {
   const longitude = longitude_element.innerHTML;
   var mapProp= {
     center:new google.maps.LatLng(latitude, longitude),
-    zoom:5,
+    zoom:15,
     mapId: "ec7bffaa310812cf",
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
