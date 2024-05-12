@@ -7,8 +7,8 @@ function myMap() {
   
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
-      latitude = position.coords.latitude;
-      longitude = position.coords.longitude;
+      let latitude = position.coords.latitude;
+      let longitude = position.coords.longitude;
       loc.classList.remove("hidden")
       latitude_element.innerHTML = latitude;
       longitude_element.innerHTML = longitude;
