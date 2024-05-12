@@ -26,8 +26,9 @@ function myMap() {
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   const request = {
+    location: {lat: latitude, lng: longitude},
     query: "park",
-    fields: ["name", "geometry"],
+    radius: 2000,
   };
   service = new google.maps.places.PlacesService(map);
   service.findPlaceFromQuery(request, (results, status) => {
