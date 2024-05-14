@@ -18,12 +18,12 @@ function myMap() {
       longitude_element.innerHTML = longitude;
       let location = google.maps.LatLng(latitude, longitude);
       map.setCenter(location)
+      createMarker(coords, map);
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
   } else {
     console.log('Geolocation is not supported by this browser.');
   }
-  createMarker(coords, map);
   /*
   const request = {
     query: "park",
