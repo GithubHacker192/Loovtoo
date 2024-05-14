@@ -17,8 +17,8 @@ function myMap() {
   } else {
     console.log('Geolocation is not supported by this browser.');
   }
-  const latitude = latitude_element.innerHTML;
-  const longitude = longitude_element.innerHTML;
+  const latitude = parseFloat(latitude_element.innerHTML);
+  const longitude = parseFloat(longitude_element.innerHTML);
   var coords = new google.maps.LatLng(latitude, longitude);
   var mapProp = {
     center: coords,
