@@ -19,12 +19,15 @@ function myMap() {
   }
   const latitude = latitude_element.innerHTML;
   const longitude = longitude_element.innerHTML;
-  var mapProp= {
-    center:new google.maps.LatLng(latitude, longitude),
+  var coords = new google.maps.LatLng(latitude, longitude);
+  var mapProp = {
+    center: coords,
     zoom:15,
     mapId: "ec7bffaa310812cf",
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  createMarker(coords, map);
+  /*
   const request = {
     query: "park",
     fields: ["name", "geometry"],
@@ -38,7 +41,7 @@ function myMap() {
 
       map.setCenter(results[0].geometry.location);
     }
-  });
+  }); */
 }
 function createMarker(place, map) {
   if (!place.geometry || !place.geometry.location) return;
