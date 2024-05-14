@@ -4,7 +4,11 @@ function myMap() {
   const loc = document.getElementById("location");
   const latitude_element = document.getElementById("latitude");
   const longitude_element = document.getElementById("longitude");
-  
+  var mapProp = {
+    zoom:15,
+    mapId: "ec7bffaa310812cf",
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition((position) => {
       let latitude = position.coords.latitude;
@@ -12,20 +16,13 @@ function myMap() {
       loc.classList.remove("hidden")
       latitude_element.innerHTML = latitude;
       longitude_element.innerHTML = longitude;
+      let location = google.maps.LatLng(latitude, longitude);
+      map.setCenter(location)
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
   } else {
     console.log('Geolocation is not supported by this browser.');
   }
-  const latitude = parseFloat(latitude_element.innerHTML);
-  const longitude = parseFloat(longitude_element.innerHTML);
-  var coords = new google.maps.LatLng(latitude, longitude);
-  var mapProp = {
-    center: coords,
-    zoom:15,
-    mapId: "ec7bffaa310812cf",
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
   createMarker(coords, map);
   /*
   const request = {
