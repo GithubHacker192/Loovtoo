@@ -335,3 +335,6 @@ img {
     opacity: 1;
   }
 }
+:not(.hidden) #location {
+  border: 1px solid aqua;
+}
