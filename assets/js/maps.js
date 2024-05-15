@@ -40,6 +40,7 @@ function myMap() {
     }
   }); */
 }
+/*
 function createMarker(place, map) {
   //if (!place.geometry || !place.geometry.location) return;
 
@@ -53,5 +54,5 @@ function createMarker(place, map) {
     infowindow.open(map);
   });
 
-}
+}*/
 window.myMap = myMap;
