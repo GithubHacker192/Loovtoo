@@ -5,6 +5,7 @@ function myMap() {
   const latitude_element = document.getElementById("latitude");
   const longitude_element = document.getElementById("longitude");
   var mapProp = {
+    center: {lat: 58.378082, lng: 26.729091}
     zoom:15,
     mapId: "ec7bffaa310812cf",
   };
