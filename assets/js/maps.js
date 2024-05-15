@@ -41,11 +41,11 @@ function myMap() {
   }); */
 }
 function createMarker(place, map) {
-  if (!place.geometry || !place.geometry.location) return;
+  //if (!place.geometry || !place.geometry.location) return;
 
   const marker = new google.maps.marker.AdvancedMarkerElement({
     map,
-    position: place.geometry.location,
+    position: place,
   });
 
   google.maps.event.addListener(marker, "click", () => {
