@@ -39,9 +39,9 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
                         <span class="nav__name">Pargid</span>
                     </a>
 
-                    <a href="#" class="nav__link">
+                    <a href="aboutus.html" class="nav__link" id="link_about">
                         <i class='bx bx-message-rounded nav__icon' ></i>
-                        <span class="nav__name">Kui oled motivatsiooni kaotanud</span>
+                        <span class="nav__name">Meie veebilehest</span>
                     </a>
                 </div>
 
