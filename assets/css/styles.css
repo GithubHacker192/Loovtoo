@@ -338,3 +338,55 @@ img {
 :not(.hidden) #location {
   border: 1px solid aqua;
 }
+h1 {
+  position: relative;
+  font-size: 40px;
+}
+.indexinfo {
+  background-color: aqua;
+  border-radius: 10px;
+  border: solid 4px #FFFFFF;
+  text-align: left;
+  width: fit-content;
+  padding: 5px;
+  padding-top: 3px;
+  padding-right: 15px;
+}
+ul {
+  text-align: left;
+}
+.infolist {
+  font-size: 25px;
+}
+
+.corner-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden; /* Ensures the image does not overflow the container */
+  width: 50%;
+  height: auto;
+  max-height: 75vh;
+}
+
+.corner-image img {
+  width: 100%; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  /* This clip-path creates a diagonal cut from the bottom-left to the top-right */
+}
+.indexinfo p {
+  font-size: 20px;
+}
+.infod {
+  display: flex;
+}
+.infotext {
+  width: 400px;
+  margin-left: 50px;
+}
+.infotext a {
+  text-decoration: underline;
+  color: #6923D0;
+}
