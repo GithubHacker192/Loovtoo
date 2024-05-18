@@ -56,5 +56,4 @@ function createMarker(place, map) {
   });
 
 }*/
-google.maps.event.addDomListener(window, "load", myMap)
 window.myMap = myMap;
