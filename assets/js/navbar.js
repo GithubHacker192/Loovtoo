@@ -6,10 +6,6 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
 
         <a href="#" class="header__logo"><img class="header__img" src="assets/img/logo.png">GoodFit</a>
         <h3 id="title">Pargid ja rohealad</h1>
-        <div class="header__search">
-            <input type="search" placeholder="Search" class="header__input">
-            <i class='bx bx-search header__icon'></i>
-        </div>
 
         <div class="header__toggle">
             <i class='bx bx-menu' id="header-toggle"></i>
@@ -42,6 +38,10 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
                     <a href="aboutus.html" class="nav__link" id="link_about">
                         <i class='bx bx-message-rounded nav__icon' ></i>
                         <span class="nav__name">Meie veebilehest</span>
+                    </a>
+                    <a href="treeningideed.html" class="nav__link" id="link_about">
+                        <i class='bx bx-message-rounded nav__icon' ></i>
+                        <span class="nav__name">Õues liikumise ideed</span>
                     </a>
                 </div>
             </div>
