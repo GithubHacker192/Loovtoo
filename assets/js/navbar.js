@@ -47,10 +47,6 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
                             </div>
                         </div>
                     </div>
-                    <a href="aboutus.html" class="nav__link" id="link_about">
-                        <i class='bx bx-message-rounded nav__icon' ></i>
-                        <span class="nav__name">Meie veebilehest</span>
-                    </a>
                 </div>
             </div>
         </div>

@@ -361,16 +361,19 @@ ul {
 }
 
 .corner-image {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   overflow: hidden; /* Ensures the image does not overflow the container */
   width: 50%;
-  height: auto;
+  height: 50%;
   max-height: 75vh;
 }
 
 .corner-image img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
   width: 100%; /* Adjust the size as needed */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
@@ -380,9 +383,7 @@ ul {
 .indexinfo p {
   font-size: 20px;
 }
-.infod {
-  display: flex;
-}
+
 .infotext {
   width: 400px;
   margin-left: 50px;
@@ -396,4 +397,8 @@ ul {
 }
 .sidebyside {
   display: flex;
+}
+.tiimipilt {
+  width: 50%;
+  height: auto;
 }
