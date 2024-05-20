@@ -397,3 +397,7 @@ ul {
 .sidebyside {
   display: flex;
 }
+iframe {
+  height: 35vh;
+  padding: 4px;
+}
