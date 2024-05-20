@@ -394,3 +394,6 @@ ul {
 .littleinfo {
   font-size: 10px;
 }
+.sidebyside {
+  display: flex;
+}
