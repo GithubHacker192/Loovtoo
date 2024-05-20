@@ -36,7 +36,7 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
                     </a>
                     <div class="nav__dropdown">
                         <a href="treeningideed_suvi.html" class="nav__link" id="treening">
-                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <i class='fas fa-biking nav__icon' ></i>
                             <span class="nav__name">Õuetegevused</span>
                             <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                         </a>
