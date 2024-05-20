@@ -19,12 +19,12 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
         <div>
             <a href="#" class="nav__link nav__logo">
                 <i class='bx bxs-disc nav__icon' ></i>
-                <span class="nav__logo-name">Bedimcode</span>
+                <span class="nav__logo-name">GoodFit</span>
             </a>
 
             <div class="nav__list">
                 <div class="nav__items">
-                    <h3 class="nav__subtitle">Asukohad</h3>
+                    <h3 class="nav__subtitle">Menüü</h3>
 
                     <a href="index.html" class="nav__link" id="link_avaleht">
                         <i class='bx bx-home nav__icon' ></i>
@@ -34,14 +34,22 @@ header_div.innerHTML = `           <!--========== HEADER ==========-->
                         <i class='fa fa-tree nav__icon' ></i>
                         <span class="nav__name">Pargid</span>
                     </a>
-
+                    <div class="nav__dropdown">
+                        <a href="treeningideed_suvi.html" class="nav__link" id="treening">
+                            <i class='bx bx-message-rounded nav__icon' ></i>
+                            <span class="nav__name">Õuetegevused</span>
+                            <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                        </a>
+                        <div class="nav__dropdown-collapse">
+                            <div class="nav__dropdown-content">
+                                <a href="treeningideed_suvi.html" class="nav__dropdown-item" id="treening_suvi">Suvel</a>
+                                <a href="treeningideed_talv.html" class="nav__dropdown-item" id="treening_talv">Talvel</a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="aboutus.html" class="nav__link" id="link_about">
                         <i class='bx bx-message-rounded nav__icon' ></i>
                         <span class="nav__name">Meie veebilehest</span>
-                    </a>
-                    <a href="treeningideed.html" class="nav__link" id="link_about">
-                        <i class='bx bx-message-rounded nav__icon' ></i>
-                        <span class="nav__name">Õues liikumise ideed</span>
                     </a>
                 </div>
             </div>
