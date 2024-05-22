@@ -18,7 +18,7 @@ function myMap() {
       latitude_element.innerHTML = latitude;
       longitude_element.innerHTML = longitude;
       let location = google.maps.LatLng(latitude, longitude);
-      map.setCenter({lat: latitude, lng: longitude});
+      map.setCenter(position);
       // createMarker(location, map);
       console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
     });
